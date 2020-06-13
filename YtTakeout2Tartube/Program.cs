@@ -14,9 +14,9 @@ namespace YtTakeout2Tartube
             public string In { get; set; }
             [Option('o', "out", Required = true, HelpText = "Tartube JSON output filename")]
             public string Out { get; set; }
-            [Option("db_start_index", Default = 0, HelpText = "Tartube has DB IDs for each sub, this specifies where our IDs should increment from. From testing this doesn't seem necessary and it seems Tartube resolves potential ID issues itself")]
+            [Option("db-start-index", Default = 0, HelpText = "Tartube has DB IDs for each sub, this specifies where our IDs should increment from. From testing this doesn't seem necessary and it seems Tartube resolves potential ID issues itself")]
             public int DbStartIndex { get; set; }
-            [Option("strip_colons", Default = false, HelpText = "Colons seem to give the importer issues for some reason, enable this if it's failing to import correctly (if the importer closes without saying how many items imported, it means it failed)")]
+            [Option("strip-colons", Default = false, HelpText = "Colons seem to give the importer issues for some reason, enable this if it's failing to import correctly (if the importer closes without saying how many items imported, it means it failed)")]
             public bool StripColons { get; set; }
         }
         
